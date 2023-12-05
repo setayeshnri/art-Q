@@ -1,18 +1,15 @@
-var modal = document.querySelector("#info");
-var openBtn = document.querySelector("#logo_btn");
-
-var closeBtn = document.querySelector("#close_btn");
-
-openBtn.onclick = function () {
-  modal.style.display = "block";
+const startButton = document.querySelector("#logo_btn");
+const popup = document.querySelector("#info");
+const closePopupButton = document.querySelector("#close_btn");
+startButton.onclick = function () {
+  popup.style.display = "block";
 };
-
-closeBtn.onclick = function () {
-  modal.style.display = "none";
+closePopupButton.onclick = function () {
+  popup.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == popup) {
+    popup.style.display = "none";
   }
 };
