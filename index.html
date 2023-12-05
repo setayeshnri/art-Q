@@ -8,26 +8,28 @@
   </head>
   <body>
     <div id="header" class="header">
-      <button id="logo_btn">
+      <button id="button-start">
         <img src="info_logo.png" alt="" class="header__logo" />
       </button>
     </div>
 
-    <section id="info" class="info">
-      <div class="info_content">
+    <div class="popup">
+      <div class="popup__container">
         <h1 class="title">Masterpiece Matchup!</h1>
-        <p id="info__instruction" class="info__instruction">
-          Get ready to test your art knowledge in five exciting rounds, each
-          featuring three works of art. Before we dive in, familiarize yourself
-          with 15 works and their respective artists. Now, it's time to put your
-          memory to the test! In each round, we'll present you with three
-          artworks, and your mission is to correctly match a artist with its
-          corresponding artwork.
-        </p>
-        <button id="close_btn">OK</button>
+        <form class="popup__form" novalidate>
+          <p id="info__instruction" class="info__instruction">
+            Get ready to test your art knowledge in five exciting rounds, each
+            featuring three works of art. Before we dive in, familiarize
+            yourself with 15 works and their respective artists. Now, it's time
+            to put your memory to the test! In each round, we'll present you
+            with three artworks, and your mission is to correctly match a artist
+            with its corresponding artwork.
+          </p>
+          <span id="input-name"></span>
+          <button id="close_btn">OK</button>
+        </form>
       </div>
-    </section>
-
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
